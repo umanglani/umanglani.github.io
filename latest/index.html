@@ -92,7 +92,7 @@
 			                    <li class="smooth-menu"><a href="#portfolio">portfolio</a></li>
 			                    <li class="smooth-menu"><a href="#contact">contact</a></li>
 								<li class="smooth-menu">
-									<a href="assets/download/browney.txt" download>download resume</a>
+									<a target="_blank" href="assets/download/resume.pdf" onclick="downloadFile('assets/download/resume.pdf')" download="umeshmanglani-resume.pdf">download resume</a>
 								</li>
 			                </ul><!--/.nav -->
 			            </div><!-- /.navbar-collapse -->
@@ -117,8 +117,7 @@
 							<div class="typing-text-container" id="typingTextContainer">
 								<p class="typing-cursor"></p>
 							</div>
-	
-							<!-- <a href="assets/download/browney.txt" download>download resume</a> -->
+
 						</div><!--/.header-text-->
 						<p></p>
 					</div><!--/.col-->
@@ -777,6 +776,17 @@
 		
         <!--Custom JS-->
         <script src="assets/js/custom.js"></script>
+
+		<script>
+			function downloadFile(src){
+				var link=document.createElement('a');
+				document.body.appendChild(link);
+				link.href= src;
+				link.target='_blank';
+				link.download = '';
+				link.click();
+			}
+		</script>
         
     </body>
 	
