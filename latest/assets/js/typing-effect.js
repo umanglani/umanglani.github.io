@@ -9,7 +9,7 @@ $(document).ready(function () {
 
     // Typerwrite text content. Use a pipe to indicate the start of the second line "|".  
     var textArray = [
-        "front end expert and fullstack enthuistic"
+        "front end expert and fullstack enthusiastic"
     ];
 
     // Speed (in milliseconds) of typing.
