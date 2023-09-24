@@ -91,7 +91,7 @@
             <div style="font-size: 46px; margin-bottom: 5px;">Umesh Manglani</div>
             <div style="font-size: 24px; color: #449399; margin-bottom: 5px;">VP (UI Specialist) @ BNY Mellon Innovation Center, Singapore</div>
             <div style="font-size: 18px">
-                Creative UI professional with 17+ years of experience, ready to make a positive impact. I have vast knowledge of cutting edge front end technologies and a proven track record of delivering exquisite and user-friendly web/app solutions. Always ready to learn new skills.
+                Experienced Front-End Developer with 18+ years of expertise (12 years as Fullstack) in creating innovative web applications and digital solutions. Proven track record of delivering high-quality software products for diverse industries.
             </div>
         </div>
 
@@ -217,7 +217,12 @@
   </body>
 
   <script>
-    var skills = [{name: 'JavaScript', isExpert: true}, {name: 'Angular', isExpert: true}, {name: 'React', isExpert: true}, {name: 'Typescript', isExpert: true}, {name: 'Redux', isExpert: true}, {name: 'React-Native', isExpert: true}, {name: 'RxJS', isExpert: true}, {name: 'SASS', isExpert: true}, {name: 'CSS3', isExpert: true}, {name: 'D3js', isExpert: true}, {name: 'Highcharts', isExpert: true}, {name: 'AG-Grid', isExpert: true}, {name: 'Figma', isExpert: true}, {name: 'Git', isExpert: true}, {name: 'Agile', isExpert: true}, {name: 'Python', isExpert: false}, {name:'REST APIs', isExpert: true}, {name: 'SQL', isExpert: true}, {name: 'Blockchain', isExpert: false}, {name: 'Azure Beginner', isExpert: false}, {name: 'Power BI', isExpert: false}];
+    var skills = [{name: 'JavaScript', isExpert: true}, {name: 'Angular', isExpert: true}, {name: 'React', isExpert: true},
+    {name: 'Typescript', isExpert: true}, {name: 'Redux', isExpert: true}, {name: 'React-Native', isExpert: true},
+    {name: 'RxJS', isExpert: true}, {name: 'SASS', isExpert: true}, {name: 'CSS3', isExpert: true}, {name: 'D3js', isExpert: true},
+    {name: 'Highcharts', isExpert: true}, {name: 'AG-Grid', isExpert: true}, {name: 'Figma', isExpert: true}, {name: 'Git', isExpert: true},
+    {name: 'Agile', isExpert: true}, {name:'REST APIs', isExpert: true}, {name: 'SQL', isExpert: true},
+    {name: 'Python', isExpert: false}, {name: 'Blockchain (Web3)', isExpert: false}, {name: 'Azure Beginner', isExpert: false}, {name: 'Power BI', isExpert: false}, {name: 'C#', isExpert: false}, {name: 'MongoDB', isExpert: false}, {name: 'Java/Spring', isExpert: false}];
 
     var skillsDiv = document.getElementById('skills');
     skillsDiv.innerHTML = skills.map(function (skill) {
@@ -228,6 +233,8 @@
 
     function getLanguageProficienty(level) {
         switch(level) {
+            case 0:
+                return 'Learning';
             case 1:
             case 2:
                 return 'Elementary';
@@ -240,7 +247,7 @@
         }
     }
 
-    var languages = [{name: 'English', level: 5}, {name: 'Hindi', level: 5}, {name: 'Spanish', level: 1}];
+    var languages = [{name: 'English', level: 5}, {name: 'Hindi', level: 5}, {name: 'Spanish', level: 1}, {name: 'Dutch', level: 0}];
 
     var langDiv = document.getElementById('languages');
     langDiv.innerHTML = languages.map(function (lang) {
@@ -317,6 +324,7 @@
             location: 'Gurgaon, India',
             detail: `
             <div style="padding-top: 4px;"> • Worked on CTI (computer telephone interaction) web applications for Dell, IBM, AOL, MSN, Disney etc, using C#, Asp.Net, Web Services and CTI APIs</div>
+            <div style="padding-top: 4px;"> • Visited USA to train team on web technologies front</div>
             ` 
         }
     ];
