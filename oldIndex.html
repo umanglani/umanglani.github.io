@@ -156,6 +156,11 @@
                 </div>
 
                 <div>
+                    <div class="section-title" style="margin-top: 40px;">STRENGTHS</div>
+                    <div id="strengths" style="display: flex; flex-flow: row wrap; margin-top: 10px;"></div>
+                </div>
+
+                <div>
                     <div class="section-title" style="margin-top: 25px;">LANGUAGES</div>
                     <div id="languages" style="margin-top: 10px; display: flex; flex-direction: column"></div>
                 </div>
@@ -231,6 +236,20 @@
     skillsDiv.innerHTML = skills.map(function (skill) {
         var cssName = skill.isExpert ? 'skill expert-skill' : 'skill';
         return `<div class="${cssName}">${skill.name}</div>`;
+    }).join('');
+
+    var strengths = ['Expertise in Modern Web Technologies',
+        'User-Centric Design Philosophy',
+        'Performance Optimization',
+        'Agile Methodologies',
+        'Continuous Learning',
+        'Excellent Problem Solving',
+        'Team Player & Mentor'
+    ];
+
+    var strengthsDiv = document.getElementById('strengths');
+    strengthsDiv.innerHTML = strengths.map(function (strength) {
+        return '<div class="interest">' + strength + '</div>';
     }).join('');
 
 
