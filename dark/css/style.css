@@ -71,7 +71,7 @@ a, a:hover {
 }
 
 .unslate_co--footer {
-  position: fixed !important;
+  /* position: fixed !important; */
   width: 100%;
   background-color: #191919;
   color: #fff;
